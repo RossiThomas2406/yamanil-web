@@ -1,0 +1,79 @@
+.footer {
+    background-color: #111; /* Casi negro */
+    color: #bbb; /* Gris claro para texto no prioritario */
+    padding: 4rem 20px 1rem; /* Padding top grande, bottom chico para el copyright */
+    font-size: 0.95rem;
+    margin-top: auto; /* Truco de Flexbox: empuja el footer al fondo si hay poco contenido */
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #333; /* Línea separadora sutil */
+}
+
+/* Columna Marca */
+.brand h2 {
+    color: var(--white);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.brand p {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* Columna Links */
+.links h3, .contact h3 {
+    color: var(--white);
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.linkList {
+    list-style: none;
+    padding: 0;
+}
+
+.linkList li {
+    margin-bottom: 0.8rem;
+}
+
+.linkList a {
+    text-decoration: none;
+    color: #bbb;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.linkList a:hover {
+    color: var(--primary-color);
+    padding-left: 5px; /* Efecto visual de movimiento */
+}
+
+/* Columna Contacto */
+.contactItem {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.icon {
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
+/* Copyright (Abajo de todo) */
+.copyright {
+    text-align: center;
+    padding-top: 1.5rem;
+    font-size: 0.85rem;
+    color: #666;
+}

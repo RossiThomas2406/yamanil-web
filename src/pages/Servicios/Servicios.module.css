@@ -1,0 +1,101 @@
+/* Header consistente con las otras páginas */
+.header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 74, 143, 0.8)),
+                url('https://images.unsplash.com/photo-1566576912902-1d6ebc123d8c?q=80&w=1920&auto=format&fit=crop'); /* Foto industrial/logística */
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    text-align: center;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+/* Contenedor principal */
+.container {
+    padding: 4rem 20px;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+/* Fila de Servicio (Zig Zag) */
+.serviceRow {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 6rem;
+}
+
+/* Invertir orden en las filas pares (2, 4, etc) */
+.serviceRow:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.imageBox {
+    flex: 1;
+    height: 350px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.imageBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.imageBox:hover img {
+    transform: scale(1.05);
+}
+
+.textBox {
+    flex: 1;
+}
+
+.serviceTitle {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-left: 5px solid var(--primary-color);
+    padding-left: 15px;
+}
+
+.serviceDesc {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    white-space: pre-line; /* Respeta los saltos de línea */
+}
+
+.badge {
+    display: inline-block;
+    background-color: #eef2f6;
+    color: var(--primary-color);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+/* Responsive: En celular todo es columna */
+@media (max-width: 768px) {
+    .serviceRow {
+        flex-direction: column !important; /* Forzamos columna siempre en móvil */
+        gap: 2rem;
+    }
+    
+    .imageBox {
+        width: 100%;
+        height: 250px;
+    }
+}

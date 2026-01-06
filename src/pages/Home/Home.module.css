@@ -1,0 +1,158 @@
+.homeContainer {
+    width: 100%;
+}
+
+/* --- HERO SECTION --- */
+.hero {
+    height: 85vh; /* Mantenemos la altura imponente */
+    width: 100%;
+background: linear-gradient(rgba(0, 74, 143, 0.7), rgba(0, 0, 0, 0.6)), /* Subí un poco la opacidad azul */
+                url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=1920&auto=format&fit=crop'); /* FOTO DE CAMIONES */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    padding: 0 20px;
+
+    /* --- AGREGAMOS ESTO PARA ROMPER EL CUADRADO --- */
+    /* Recorta la esquina inferior derecha hacia arriba */
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    /* Agregamos un poco de padding extra abajo para que el contenido no quede muy pegado al corte */
+    padding-bottom: 4rem;
+}
+
+.heroContent {
+    max-width: 800px;
+    animation: fadeIn 1s ease-in;
+}
+
+.title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+.ctaButton {
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: var(--white);
+    color: var(--primary-color);
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    border: 2px solid var(--white);
+}
+
+.ctaButton:hover {
+    background-color: transparent;
+    color: var(--white);
+}
+
+/* --- SECCIÓN INTRO --- */
+.introSection {
+    padding: 5rem 2rem;
+    text-align: center;
+    background-color: var(--white);
+}
+
+.sectionTitle {
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.sectionTitle::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--primary-color);
+    margin: 10px auto 0;
+}
+
+.introText {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* --- GRID DE SERVICIOS --- */
+.servicesPreview {
+    padding: 4rem 2rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    /* Magia responsive: columnas de mínimo 300px */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    border-top: 4px solid var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+.cardTitle {
+    font-size: 1.4rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.cardText {
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.cardLink {
+    color: var(--primary-color);
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+.cardLink:hover {
+    text-decoration: underline;
+}
+
+/* Animación simple */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Ajustes Mobile */
+@media (max-width: 768px) {
+    .title { font-size: 2.2rem; }
+    .hero { height: 70vh; }
+}
