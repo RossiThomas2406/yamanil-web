@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { GraduationCap, ShieldCheck, Heart, Users, Briefcase, Award } from 'lucide-react';
-import styles from './RRHH.module.css';
+import styles from './Nosotros.module.css';
 
 const RRHH = () => {
   return (

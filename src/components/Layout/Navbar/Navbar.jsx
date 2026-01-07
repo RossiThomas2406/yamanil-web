@@ -58,9 +58,9 @@ const Navbar = () => {
             <nav className={styles.desktopNav}>
               <ul className={styles.navLinks}>
                 <li><Link to="/" className={`${styles.link} ${isActive('/')}`}>Inicio</Link></li>
-                <li><Link to="/calidad" className={`${styles.link} ${isActive('/calidad')}`}>Productos</Link></li>
-                <li><Link to="/servicios" className={`${styles.link} ${isActive('/servicios')}`}>Distribución</Link></li>
-                <li><Link to="/rrhh" className={`${styles.link} ${isActive('/rrhh')}`}>Nosotros</Link></li>
+                <li><Link to="/productos" className={`${styles.link} ${isActive('/productos')}`}>Productos</Link></li>
+                <li><Link to="/servicios" className={`${styles.link} ${isActive('/servicios')}`}>Servicios</Link></li>
+                <li><Link to="/nosotros" className={`${styles.link} ${isActive('/nosotros')}`}>Nosotros</Link></li>
                 <li>
                     <Link to="/contacto" className={`${styles.link} ${styles.btnContacto}`}>
                         Contacto

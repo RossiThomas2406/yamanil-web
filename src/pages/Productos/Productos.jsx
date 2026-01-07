@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Importamos Link
 import { ShoppingBag, Droplet, Check } from 'lucide-react'; 
-import styles from './Calidad.module.css';
+import styles from './Productos.module.css';
 
 const Calidad = () => {
   return (

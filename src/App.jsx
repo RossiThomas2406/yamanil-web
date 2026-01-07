@@ -6,9 +6,9 @@ import Footer from './components/Layout/Footer/Footer'; // <--- IMPORTAR
 
 // Páginas
 import Home from './pages/Home/Home';
-import Calidad from './pages/Calidad/Calidad';
+import Productos from './pages/Productos/Productos';
 import Servicios from './pages/Servicios/Servicios';
-import RRHH from './pages/RRHH/RRHH';
+import Nosotros from './pages/Nosotros/Nosotros';
 import Contacto from './pages/Contacto/Contacto';
 
 function App() {
@@ -27,9 +27,9 @@ function App() {
         }}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/calidad" element={<Calidad />} />
+            <Route path="/productos" element={<Productos />} />
             <Route path="/servicios" element={<Servicios />} />
-            <Route path="/rrhh" element={<RRHH />} />
+            <Route path="/nosotros" element={<Nosotros />} />
             <Route path="/contacto" element={<Contacto />} />
           </Routes>
         </main>
