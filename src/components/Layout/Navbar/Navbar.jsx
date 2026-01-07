@@ -75,9 +75,9 @@ const Navbar = () => {
             <div className={styles.mobileMenu}>
                 <ul className={styles.mobileLinks}>
                     <li><Link to="/" onClick={closeMenu}>Inicio</Link></li>
-                    <li><Link to="/calidad" onClick={closeMenu}>Productos</Link></li>
+                    <li><Link to="/productos" onClick={closeMenu}>Productos</Link></li>
                     <li><Link to="/servicios" onClick={closeMenu}>Distribución</Link></li>
-                    <li><Link to="/rrhh" onClick={closeMenu}>Nosotros</Link></li>
+                    <li><Link to="/nosotros" onClick={closeMenu}>Nosotros</Link></li>
                     <li><Link to="/contacto" onClick={closeMenu} className={styles.mobileBtn}>Contacto</Link></li>
                 </ul>
             </div>
