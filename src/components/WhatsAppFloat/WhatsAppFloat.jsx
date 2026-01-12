@@ -5,7 +5,7 @@ const WhatsAppFloat = () => {
   // REEMPLAZA ESTE NÚMERO POR EL REAL DE LA EMPRESA
   // Formato: Código de país (54) + 9 + Código de área (11) + Número sin 15
   // Ejemplo: 5491112345678
-  const phoneNumber = "5491121599668"; 
+  const phoneNumber = "5491122599668"; 
   const message = "Hola Yamanil S.A., quisiera hacer una consulta.";
 
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
