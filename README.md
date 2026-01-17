@@ -4,7 +4,7 @@ Sitio web desarrollado para **Yamanil**, enfocado en ofrecer una experiencia de 
 
 ### 🔗 Enlaces útiles
 - **Demo en vivo:** [https://yamanil-web.vercel.app](https://yamanil-web.vercel.app/)
-- **LinkedIn del desarrollador:** [Thomas Rossi](https://www.linkedin.com/in/thomas-rossi-0255553a4/)
+- **LinkedIn del desarrollador:** [Thomas Rossi](https://www.linkedin.com/in/thomas-hernan-rossi/)
 
 ---
 
