@@ -1,15 +1,14 @@
-# 🚀 Yamanil Web
+#Yamanil Web
 
 Sitio web desarrollado para **Yamanil**, enfocado en ofrecer una experiencia de usuario fluida y moderna.
 
-### 🔗 Enlaces útiles
+### Enlaces
 - **Demo en vivo:** [https://yamanil-web.vercel.app](https://yamanil-web.vercel.app/)
 - **LinkedIn del desarrollador:** [Thomas Rossi](https://www.linkedin.com/in/thomas-hernan-rossi/)
 
 ---
 
-### 🛠️ Tecnologías utilizadas
-Este proyecto fue construido utilizando el siguiente stack:
+###Tecnologías utilizadas
 * **Frontend:** React.js con Vite
 * **Estilos:** CSS3
 * **Despliegue:** Vercel
