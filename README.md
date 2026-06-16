@@ -1,4 +1,4 @@
-#Yamanil Web
+# Yamanil Web
 
 Sitio web desarrollado para **Yamanil**, enfocado en ofrecer una experiencia de usuario fluida y moderna.
 
@@ -8,7 +8,7 @@ Sitio web desarrollado para **Yamanil**, enfocado en ofrecer una experiencia de 
 
 ---
 
-###Tecnologías utilizadas
+### Tecnologías utilizadas
 * **Frontend:** React.js con Vite
 * **Estilos:** CSS3
 * **Despliegue:** Vercel
